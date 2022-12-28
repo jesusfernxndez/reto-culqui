@@ -12,10 +12,10 @@ let searchStatus = ref<CharacterStatusType | undefined>(undefined)
 
 let characters = ref<CharacterType[]>([])
 
-const onChangeInputSearch = async (value: string) => {
+const onChangeInputSearch = (value: string) => {
   searchName.value = value
 }
-const onChangeSelectStatusSearch = async (value: CharacterStatusType | undefined) => {
+const onChangeSelectStatusSearch = (value: CharacterStatusType | undefined) => {
   searchStatus.value = value
 }
 
